@@ -45,3 +45,8 @@ function useExecutableEffect(fn, deps) {
 
 }
 ```
+## Unresolved questions
+Продумать нейминг.
+Продумать cleanup поведение
+
+
