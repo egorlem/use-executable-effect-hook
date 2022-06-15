@@ -1,10 +1,10 @@
-# Summary
+## Summary
 
 У useExecutableEffect логика идентичная useEffect за исключением того, что
 не происходит вызова callback'а если один параметров в массиве зависимостей имеет
 false значениe.
 
-# Basic example
+## Basic example
 
 ```js
 import { useEffect, useState } from 'react'
@@ -24,13 +24,13 @@ function Component(props) {
 }
 ```
 
-# Motivation: Избежать страшных if'ов, избавится от дублирования if'ов в useEffect
+## Motivation: Избежать страшных if'ов, избавится от дублирования if'ов в useEffect
 
 Часто при монтировании компонента, мы не получаем все нужные данные для правильного
 вызова useEffect. Из за этого приходится городить страшные if'ы c кучей проверок.
 Например получение userId у google analytics.
 
-# Detailed design
+## Detailed design
 
 ```js
 import { useEffect, useState } from 'react'
