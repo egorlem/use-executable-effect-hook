@@ -2,7 +2,7 @@
 
 У useExecutableEffect логика идентичная useEffect за исключением того, что
 не происходит вызова callback'а если один параметров в массиве зависимостей имеет
-false значениe.
+falsy значениe.
 
 ## Basic example
 
