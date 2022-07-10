@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react'
 function Component(props) {
   const {
     sourceOneData: { valueOne } // Данные приходят из первого сервиса (GA)
-    sourceTwoData: { valueTwo } // Данные приходят из второго сервиса (dataData)
+    sourceTwoData: { valueTwo } // Данные приходят из второго сервиса (dadata)
   } = props;
 
   useExecutableEffect(() => {
@@ -47,4 +47,9 @@ function useExecutableEffect(fn, deps) {
 	}
 
 }
-``` 
+```
+## Unresolved questions
+Продумать нейминг.
+Продумать cleanup поведение
+
+
