@@ -2,7 +2,7 @@
 
 У useExecutableEffect логика идентичная useEffect за исключением того, что
 не происходит вызова callback'а если один параметров в массиве зависимостей имеет
-falsy значениe.
+falsy значение.
 
 ## Basic example
 
@@ -30,6 +30,9 @@ function Component(props) {
 вызова useEffect. Из за этого приходится городить страшные if'ы c кучей проверок.
 Например получение userId у google analytics.
 
+[tweet про useEffect от Абрамова](https://twitter.com/dan_abramov/status/1545828736632819714), обратить внимание на 
+комментарии. На спринах много страшных if'ов внутри useEffect
+
 ## Detailed design
 
 ```js
@@ -44,4 +47,4 @@ function useExecutableEffect(fn, deps) {
 	}
 
 }
-```
+``` 
